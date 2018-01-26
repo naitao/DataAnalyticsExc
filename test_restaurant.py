@@ -10,3 +10,4 @@ while guests:
     if r.seat(guests[-1]):
         guests.pop()
     r.serve()
+
