@@ -1,3 +1,11 @@
+# Auther: Peng Ye
+# Date: 2018.02.09
+# Function: Searching Discount Price information (focusing on food and drink)
+# from some majar Ireland Supper-Market websites and display the itmes and prices
+# Development duration: 4 hours
+# Version: v1.0
+
+
 import requests
 from bs4 import BeautifulSoup
 import codecs
