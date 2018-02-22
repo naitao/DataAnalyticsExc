@@ -1,0 +1,2011 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<script>
+    (function(_,e,rr,s){_errs=[s];var c=_.onerror;_.onerror=function(){var a=arguments;_errs.push(a);
+    c&&c.apply(this,a)};var b=function(){var c=e.createElement(rr),b=e.getElementsByTagName(rr)[0];
+    c.src="//beacon.errorception.com/"+s+".js";c.async=!0;b.parentNode.insertBefore(c,b)};
+    _.addEventListener?_.addEventListener("load",b,!1):_.attachEvent("onload",b)})
+    (window,document,"script","53fdcf0598d562f14a0001e5");
+</script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vg4HWFBQGwIFXFhQBgIA"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,n,e)])}catch(s){try{i("ierr",[s,c.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t){i("err",[t,c.now()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,n,e){u&&(d+=1)}),s.on("fn-err",function(t,n,e){u&&(this.thrown=!0,o(e))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+<title>Sweets &amp; Snacks - Food &amp; Drink</title>
+<meta name="description" content="At Dealz we offer Amazing Value with a wide range of products, including many well known brands, and local Irish brands for €1.50." />
+<meta name="keywords" content="" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://www.dealz.ie/skin/frontend/enterprise/dealz-desktop/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.dealz.ie/skin/frontend/enterprise/dealz-desktop/favicon.ico?v=2" type="image/x-icon" />
+<!--[if lte IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.dealz.ie/js/blank.html';
+    var BLANK_IMG = 'http://www.dealz.ie/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<script type="text/javascript">
+//<![CDATA[
+    var Poundland = {};
+//]]>
+</script>
+<link rel="stylesheet" type="text/css" href="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/css/styles.css?v=1513161537231" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/css/fonts.css?v=1513161537231" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/js/anythingslider/css/anythingslider.css?v=1513161537231" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/css/styles-anythingslider.css?v=1513161537231" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/css/styles-jcarousel-product.css?v=1513161537231" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/css/styles-jcarousel-recent.css?v=1513161537231" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/css/styles-dealz.css?v=1513161537231" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/css/styles-catalog.css?v=1513161537231" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.dealz.ie/skin/frontend/enterprise/default/css/print.css?v=1513161537231" media="print" />
+<script type="text/javascript" src="http://www.dealz.ie/js/prototype/prototype.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/lib/ccard.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/prototype/validation.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/scriptaculous/builder.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/scriptaculous/effects.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/scriptaculous/dragdrop.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/scriptaculous/controls.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/scriptaculous/slider.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/varien/js.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/varien/form.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/varien/menu.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/mage/translate.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/mage/cookies.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/poundland/catalogsearch.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/poundland/newsletter.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/poundland/recentlyviewed.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/ampersand_jsutil/dom_methods.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/ampersand_jsutil/url.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/ampersand_jsutil/message.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/realex/validation.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/google/ga.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/skin/frontend/enterprise/default/js/scripts.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/skin/frontend/enterprise/default/js/enterprise/catalogevent.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/skin/frontend/enterprise/default/js/enterprise/wishlist.js?v=1513161537231"></script>
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/css/styles-ie7.css?v=1513161537231" media="all" />
+<![endif]-->
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/css/styles-ie.css?v=1513161537231" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.dealz.ie/js/lib/ds-sleight.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/skin/frontend/enterprise/default/js/iehover-fix.js?v=1513161537231"></script>
+<![endif]-->
+<link rel="apple-touch-icon" href="/apple-touch-icon-dealz.png" />
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.dealz.ie';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+
+    "use strict";
+
+    function requestCookies() {
+        var xmlhttp;
+
+        if (window.XMLHttpRequest) {
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        var url = "http://www.dealz.ie/cookiepopulator/";
+        if ('https:' == document.location.protocol) {
+            if ('http://' == url.substr(0, 7)) {
+                url = 'https' + url.substr(4);
+            }
+        }
+
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+    }
+
+    function getCookie(name) {
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + name + "=");
+        if (parts.length == 2) {
+            return parts.pop().split(";").shift();
+        }
+    }
+
+    if (typeof getCookie("cookies_populated") == "undefined"
+        || typeof getCookie("CACHED_FRONT_FORM_KEY") == "undefined"
+    ) {
+        requestCookies();
+    }
+
+    //]]
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script></head>
+<body class=" catalog-category-view dealz category-normal-2 categorypath-food-and-drink-sweets-and-snacks category-sweets-and-snacks">
+<script type="text/javascript">
+    //<![CDATA[
+    document.observe('dom:loaded', function() {
+        var buttons = $$('button.delay-next-click');
+        if (!buttons || !buttons.length) {
+            return;
+        }
+
+        buttons.each(function(button) {
+            button.delayNextEvent(
+                'click',
+                100,
+                2000            );
+        });
+    });
+    //]]>
+</script><script type="text/javascript">
+    //<![CDATA[
+    var Ampersand = Ampersand || {};
+    Ampersand.Helper = {
+        priceFormat: {"pattern":"\u20ac%s","precision":2,"requiredPrecision":"2","decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":1},
+        formatPrice: function(price) {
+            if (parseInt(price) == price) {
+                this.priceFormat.requiredPrecision = 0;
+            } else {
+                this.priceFormat.requiredPrecision = 2;
+            }
+            return formatCurrency(price, this.priceFormat);
+        },
+        getOrElse: function(value, orElse) {
+            if (typeof value == 'undefined') {
+                return (typeof orElse === 'function') ? orElse() : orElse;
+            }
+
+            return value;
+        }
+    };
+    //]]>
+</script>        <!-- BEGIN GOOGLE ANALYTICS CODE -->
+    <script type="text/javascript">
+        //<![CDATA[
+        var _gaq = _gaq || [];
+        
+_gaq.push(['_setAccount', 'UA-25849863-1']);
+
+_gaq.push(['_trackPageview']);
+        
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        //]]>
+    </script>
+    <!-- END GOOGLE ANALYTICS CODE -->
+    
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+
+<div class="global-site-notice notice-cookie" id="notice-cookie-block" style="display: none">
+    <div class="notice-inner">
+        <p>Our website uses cookies to help us improve the website for you. If you'd like to know more about this, please read our <a href="http://www.dealz.ie/legal/privacy-cookie-policy/">cookie policy.</a></p>
+        <i class="close" onclick="closeCookieNotification();"></i>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+
+function closeCookieNotification() {
+    $('notice-cookie-block').hide();
+}
+
+var cookieName = 'user_notified_cookie';
+
+if (!Mage.Cookies.get(cookieName)) {
+
+    var cookieDate = new Date();
+    cookieDate.setDate(cookieDate.getDate() + (365 * 100));
+
+    document.cookie = cookieName + "=1;" +
+        "path=/;" +
+        "domain=" + Mage.Cookies.domain + ";" +
+        "expires=" +
+        cookieDate.toGMTString();
+
+    $('notice-cookie-block').show();
+
+}
+
+/* ]]> */
+</script>
+                <div class="page">
+            <div class="header-container">
+    <div class="header-margins">
+        <div class="header-inner">
+            <div class="header-panel">
+                <div class="switches">
+
+</div>
+                            </div>
+            <div class="header">
+                <div class="branding">
+                                    <a href="http://www.dealz.ie/" title="Dealz" class="logo"><strong>Dealz</strong><img src="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/images/dealz_logo.png" alt="Dealz" /></a>
+                                                        </div>
+                <div class="quick-access">
+                    <div class="checkout-link"></div>
+                                        <ul class="links">
+                        <li class="first" ><a href="javascript:void(0)" title="Sign up for news &amp; offers"  id="top-signup-link">Sign up for news &amp; offers</a></li>
+                                <li ><a href="http://www.dealz.ie/legal/privacy-cookie-policy/" title="Privacy &amp; Cookie Policy" >Privacy &amp; Cookie Policy</a></li>
+                                <li class=" last" ><a href="http://www.dealz.ie/help/" title="Help" >Help!</a></li>
+            </ul>
+                    <div id="top-newsletter-div">
+    <form action="javascript:void(0)" method="post" id="top-newsletter-validate-detail">
+        <fieldset>
+            <div id="email-subscribe-top">
+                <div class="v-fix">
+                    <input name="email" type="text" id="top-newsletter" class="input-text required-entry validate-email" />
+                    <!-- <div class="validation-advice" id="advice-validate-email-top-newsletter" style="display:none;">
+                        Please enter a valid email address                    </div> -->
+                </div>
+                <button type="submit" class="btn-primary" title="Sign Up">
+                    Sign Up                </button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<script type="text/javascript">
+    //<![CDATA[
+    var topNewsletterSubscriberFormDetail = new VarienForm('top-newsletter-validate-detail');
+
+    var newsletterTop = new Poundland.Newsletter(
+        topNewsletterSubscriberFormDetail,
+        'http://www.dealz.ie/poundland-newsletter/subscriber/new/',
+        'top-newsletter',
+        'email-subscribe-top',
+        'subscribe-success-message',
+        'validation-advice',
+        'Header'
+    );
+    //]]>
+</script>
+                </div>
+                <div class="head-links">
+                    <ul class="links">
+                        <li class="first" ><a href="http://www.dealz.ie/store-finder/" title="Store Finder" >Store Finder</a></li>
+                                <li ><a href="http://www.dealz.ie/brands/" title="Brands" >Brands</a></li>
+                                <li class=" last" ><a href="http://www.dealz.ie/great-ideas/" title="Great Ideas" >Great Ideas</a></li>
+            </ul>
+                </div>
+                <form id="search_mini_form" action="http://www.dealz.ie/catalogsearch/result/" method="get">
+<div class="form-search">
+    <input id="search" tabindex="1" type="text" name="q" value="" class="input-text" maxlength="128"/>&nbsp;<button type="submit" title="Go" class="button" onclick="gaSearchTerm()"><span><span>Go</span></span></button>
+    <div id="search_autocomplete" class="search-autocomplete"></div>
+    <script type="text/javascript">
+    //<![CDATA[
+        var searchPlaceholder = 'Search for a product';
+        var searchForm = new Varien.searchForm('search_mini_form', 'search', searchPlaceholder);
+        var minChars = 3;
+        searchForm.initAutocomplete('http://www.dealz.ie/catalogsearch/ajax/suggest/', 'search_autocomplete', minChars);
+
+        function gaSearchTerm() {
+            var term = jQuery('#search').val();
+            _gaq.push(['_trackEvent', 'Search', 'search_keyword', term]);
+        }
+    //]]>
+    </script>
+</div>
+</form>
+            </div>
+            <div class="nav-container">
+    <ul id="nav" class="li-8">
+                            <li class="level0-li  ">
+                <a class="level-top" href="http://www.dealz.ie/valentines-day">
+                    <span class="fake-table"><span class="fake-cell">
+                    Valentine's Day                    </span></span>
+                </a>
+                <div class="level0-container">
+                    
+                                            <div style="clear:both;"></div>
+                </div>
+            </li>
+            <li class="level0-li  ">
+                <a class="level-top" href="http://www.dealz.ie/food-and-drink">
+                    <span class="fake-table"><span class="fake-cell">
+                    Food &amp; Drink                    </span></span>
+                </a>
+                <div class="level0-container">
+                        <ul class="level0-ul">
+                    <li class="level1-li level1-grocery">
+                <a href="http://www.dealz.ie/food-and-drink/grocery">
+                    <span>Grocery</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-breakfast-and-cereal">
+        <a href="http://www.dealz.ie/food-and-drink/grocery/breakfast-and-cereal">
+            <span>Breakfast &amp; Cereal</span>
+        </a>
+    </li>
+    <li class="level2-li level2-ready-meals">
+        <a href="http://www.dealz.ie/food-and-drink/grocery/ready-meals">
+            <span>Ready Meals</span>
+        </a>
+    </li>
+    <li class="level2-li level2-soups-beans-and-pasta">
+        <a href="http://www.dealz.ie/food-and-drink/grocery/soups-beans-and-pasta">
+            <span>Soups, Beans &amp; Pasta</span>
+        </a>
+    </li>
+    <li class="level2-li level2-canned-meat-and-fish">
+        <a href="http://www.dealz.ie/food-and-drink/grocery/tinned-meat-fish-and-veg">
+            <span>Tinned Meat, Fish &amp; Veg</span>
+        </a>
+    </li>
+    <li class="level2-li level2-pasta-and-rice">
+        <a href="http://www.dealz.ie/food-and-drink/grocery/pasta-and-rice">
+            <span>Pasta &amp; Rice</span>
+        </a>
+    </li>
+    <li class="level2-li level2-gravy-and-sauces">
+        <a href="http://www.dealz.ie/food-and-drink/grocery/gravy-and-sauces">
+            <span>Gravy &amp; Sauces</span>
+        </a>
+    </li>
+    <li class="level2-li level2-jams-spreads-and-pickles">
+        <a href="http://www.dealz.ie/food-and-drink/grocery/jams-spreads-and-pickles">
+            <span>Jams, Spreads &amp; Pickles</span>
+        </a>
+    </li>
+    <li class="level2-li level2-desserts">
+        <a href="http://www.dealz.ie/food-and-drink/grocery/desserts">
+            <span>Desserts</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                                <li class="level1-li level1-chocolate">
+                <a href="http://www.dealz.ie/food-and-drink/chocolate">
+                    <span>Chocolate</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/food-and-drink/chocolate/chocolate-blocks-bags">
+            <span>Chocolate Blocks &amp; Bags</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/food-and-drink/chocolate/chocolate-bars-multipacks">
+            <span>Chocolate Bars &amp; Multipacks</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/food-and-drink/chocolate/boxed-chocolate">
+            <span>Boxed Chocolate</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                                <li class="level1-li level1-sweets-and-snacks">
+                <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks">
+                    <span>Sweets &amp; Snacks</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/retro-sweets">
+            <span>Retro Sweets</span>
+        </a>
+    </li>
+    <li class="level2-li level2-sweets-and-mints">
+        <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/sweets">
+            <span>Sweets</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/mints-and-chewing-gum">
+            <span>Mints &amp; Chewing Gum</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/ashleys-family-treats">
+            <span>Ashley's Family Treats</span>
+        </a>
+    </li>
+    <li class="level2-li level2-sweet-heaven">
+        <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/sweet-heaven">
+            <span>Sweet Heaven</span>
+        </a>
+    </li>
+    <li class="level2-li level2-crisps-and-snacks">
+        <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/crisps-and-snacks">
+            <span>Crisps &amp; Snacks</span>
+        </a>
+    </li>
+    <li class="level2-li level2-fruit-nut">
+        <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/fruit-nut">
+            <span>Fruit &amp; Nut</span>
+        </a>
+    </li>
+    <li class="level2-li level2-weight-watchers">
+        <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/weight-watchers">
+            <span>Weight Watchers</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                            </ul><ul class="level0-ul">
+                                <li class="level1-li level1-cakes-biscuits-and-hot-drinks">
+                <a href="http://www.dealz.ie/food-and-drink/cakes-biscuits-and-hot-drinks">
+                    <span>Cakes, Biscuits &amp; Hot Drinks</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-tea-and-coffee">
+        <a href="http://www.dealz.ie/food-and-drink/cakes-biscuits-and-hot-drinks/tea-and-coffee">
+            <span>Tea &amp; Coffee</span>
+        </a>
+    </li>
+    <li class="level2-li level2-hot-drinks-and-sweeteners">
+        <a href="http://www.dealz.ie/food-and-drink/cakes-biscuits-and-hot-drinks/hot-drinks-and-sweeteners">
+            <span>Hot Drinks &amp; Sweeteners</span>
+        </a>
+    </li>
+    <li class="level2-li level2-biscuits">
+        <a href="http://www.dealz.ie/food-and-drink/cakes-biscuits-and-hot-drinks/biscuits">
+            <span>Biscuits</span>
+        </a>
+    </li>
+    <li class="level2-li level2-cakes">
+        <a href="http://www.dealz.ie/food-and-drink/cakes-biscuits-and-hot-drinks/cakes">
+            <span>Cakes</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                                <li class="level1-li level1-soft-drinks">
+                <a href="http://www.dealz.ie/food-and-drink/soft-drinks">
+                    <span>Soft Drinks</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/food-and-drink/soft-drinks/fizzy-drinks-and-cola">
+            <span>Fizzy Drinks &amp; Cola</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/food-and-drink/soft-drinks/sports-and-energy-drinks">
+            <span>Sports &amp; Energy Drinks</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/food-and-drink/soft-drinks/water-juice-and-squash">
+            <span>Water, Juice &amp; Squash</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                        </ul>
+
+                                            <div style="clear:both;"></div>
+                </div>
+            </li>
+            <li class="level0-li  ">
+                <a class="level-top" href="http://www.dealz.ie/health-and-beauty">
+                    <span class="fake-table"><span class="fake-cell">
+                    Health &amp; Beauty                    </span></span>
+                </a>
+                <div class="level0-container">
+                        <ul class="level0-ul">
+                    <li class="level1-li level1-">
+                <a href="http://www.dealz.ie/health-and-beauty/make-up-gallery">
+                    <span>Make Up Gallery</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/health-and-beauty/make-up-gallery/eyes">
+            <span>Eyes</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/health-and-beauty/make-up-gallery/lips">
+            <span>Lips</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/health-and-beauty/make-up-gallery/face">
+            <span>Face</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/health-and-beauty/make-up-gallery/nails">
+            <span>Nails</span>
+        </a>
+    </li>
+    <li class="level2-li level2-cosmetics">
+        <a href="http://www.dealz.ie/health-and-beauty/make-up-gallery/make-up-accessories">
+            <span>Make Up Accessories</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                                <li class="level1-li level1-">
+                <a href="http://www.dealz.ie/health-and-beauty/health-fitness">
+                    <span>Health &amp; Fitness</span>
+                </a>
+                <ul class="level1-ul">
+                                    </ul>
+            </li>
+                                <li class="level1-li level1-haircare">
+                <a href="http://www.dealz.ie/health-and-beauty/haircare">
+                    <span>Haircare</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-shampoo">
+        <a href="http://www.dealz.ie/health-and-beauty/haircare/shampoo">
+            <span>Shampoo</span>
+        </a>
+    </li>
+    <li class="level2-li level2-conditioner">
+        <a href="http://www.dealz.ie/health-and-beauty/haircare/conditioner">
+            <span>Conditioner</span>
+        </a>
+    </li>
+    <li class="level2-li level2-hair-styling">
+        <a href="http://www.dealz.ie/health-and-beauty/haircare/hair-styling">
+            <span>Hair Styling</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                            </ul><ul class="level0-ul">
+                                <li class="level1-li level1-beauty-and-skincare">
+                <a href="http://www.dealz.ie/health-and-beauty/beauty-and-skincare">
+                    <span>Beauty &amp; Skincare</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-hand-and-nail-care">
+        <a href="http://www.dealz.ie/health-and-beauty/beauty-and-skincare/hand-and-nail-care">
+            <span>Hand &amp; Nail Care</span>
+        </a>
+    </li>
+    <li class="level2-li level2-moisturising">
+        <a href="http://www.dealz.ie/health-and-beauty/beauty-and-skincare/moisturising">
+            <span>Moisturising</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/health-and-beauty/beauty-and-skincare/skin-treatments">
+            <span>Skin Treatments</span>
+        </a>
+    </li>
+    <li class="level2-li level2-hair-removal">
+        <a href="http://www.dealz.ie/health-and-beauty/beauty-and-skincare/hair-removal">
+            <span>Hair Removal</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                                <li class="level1-li level1-toiletries">
+                <a href="http://www.dealz.ie/health-and-beauty/toiletries">
+                    <span>Toiletries</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-soap">
+        <a href="http://www.dealz.ie/health-and-beauty/toiletries/handwash-and-soap">
+            <span>Hand Wash &amp; Soap</span>
+        </a>
+    </li>
+    <li class="level2-li level2-shower">
+        <a href="http://www.dealz.ie/health-and-beauty/toiletries/bath-and-shower-gels">
+            <span>Bath &amp; Shower Gels</span>
+        </a>
+    </li>
+    <li class="level2-li level2-womens-deodorant">
+        <a href="http://www.dealz.ie/health-and-beauty/toiletries/deodorant">
+            <span>Deodorant</span>
+        </a>
+    </li>
+    <li class="level2-li level2-feminine-hygiene">
+        <a href="http://www.dealz.ie/health-and-beauty/toiletries/feminine-hygiene">
+            <span>Feminine Hygiene</span>
+        </a>
+    </li>
+    <li class="level2-li level2-shaving">
+        <a href="http://www.dealz.ie/health-and-beauty/toiletries/shaving">
+            <span>Shaving</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                                <li class="level1-li level1-dental">
+                <a href="http://www.dealz.ie/health-and-beauty/dental">
+                    <span>Dental</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-toothbrushes">
+        <a href="http://www.dealz.ie/health-and-beauty/dental/toothbrushes">
+            <span>Toothbrushes</span>
+        </a>
+    </li>
+    <li class="level2-li level2-toothpaste">
+        <a href="http://www.dealz.ie/health-and-beauty/dental/toothpaste">
+            <span>Toothpaste</span>
+        </a>
+    </li>
+    <li class="level2-li level2-oral-hygiene">
+        <a href="http://www.dealz.ie/health-and-beauty/dental/oral-hygiene">
+            <span>Oral Hygiene</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                            </ul><ul class="level0-ul">
+                                <li class="level1-li level1-healthcare">
+                <a href="http://www.dealz.ie/health-and-beauty/healthcare">
+                    <span>Healthcare</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-first-aid">
+        <a href="http://www.dealz.ie/health-and-beauty/healthcare/first-aid">
+            <span>First Aid</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/health-and-beauty/healthcare/family-planning">
+            <span>Family Planning</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                                <li class="level1-li level1-baby">
+                <a href="http://www.dealz.ie/health-and-beauty/baby">
+                    <span>Baby</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-baby-care">
+        <a href="http://www.dealz.ie/health-and-beauty/baby/baby-care">
+            <span>Baby Care</span>
+        </a>
+    </li>
+    <li class="level2-li level2-baby-feeding">
+        <a href="http://www.dealz.ie/health-and-beauty/baby/baby-feeding">
+            <span>Baby Feeding</span>
+        </a>
+    </li>
+    <li class="level2-li level2-baby-toys">
+        <a href="http://www.dealz.ie/health-and-beauty/baby/baby-toys">
+            <span>Baby Toys</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                                <li class="level1-li level1-">
+                <a href="http://www.dealz.ie/health-and-beauty/fragrance">
+                    <span>Fragrance</span>
+                </a>
+                <ul class="level1-ul">
+                                    </ul>
+            </li>
+                        </ul>
+
+                                            <div style="clear:both;"></div>
+                </div>
+            </li>
+            <li class="level0-li  ">
+                <a class="level-top" href="http://www.dealz.ie/home-and-pet">
+                    <span class="fake-table"><span class="fake-cell">
+                    Home &amp; Pet                    </span></span>
+                </a>
+                <div class="level0-container">
+                        <ul class="level0-ul">
+                    <li class="level1-li level1-">
+                <a href="http://www.dealz.ie/home-and-pet/back-to-college">
+                    <span>Back to College</span>
+                </a>
+                <ul class="level1-ul">
+                                    </ul>
+            </li>
+                                <li class="level1-li level1-kitchen">
+                <a href="http://www.dealz.ie/home-and-pet/kitchen">
+                    <span>Kitchen</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-food-preparation">
+        <a href="http://www.dealz.ie/home-and-pet/kitchen/food-preparation">
+            <span>Food Preparation</span>
+        </a>
+    </li>
+    <li class="level2-li level2-baking-and-cooking">
+        <a href="http://www.dealz.ie/home-and-pet/kitchen/baking-and-cooking">
+            <span>Baking &amp; Cooking</span>
+        </a>
+    </li>
+    <li class="level2-li level2-food-wrap-and-storage">
+        <a href="http://www.dealz.ie/home-and-pet/kitchen/food-wrap-and-storage">
+            <span>Food Wrap &amp; Storage</span>
+        </a>
+    </li>
+    <li class="level2-li level2-dinnerware">
+        <a href="http://www.dealz.ie/home-and-pet/kitchen/tableware">
+            <span>Tableware</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                                <li class="level1-li level1-around-the-home">
+                <a href="http://www.dealz.ie/home-and-pet/around-the-home">
+                    <span>Around The Home</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-storage">
+        <a href="http://www.dealz.ie/home-and-pet/around-the-home/storage">
+            <span>Storage</span>
+        </a>
+    </li>
+    <li class="level2-li level2-candles">
+        <a href="http://www.dealz.ie/home-and-pet/around-the-home/candles-and-room-fragrances">
+            <span>Candles &amp; Room Fragrances</span>
+        </a>
+    </li>
+    <li class="level2-li level2-homewares">
+        <a href="http://www.dealz.ie/home-and-pet/around-the-home/photo-frames">
+            <span>Photo Frames</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/home-and-pet/around-the-home/home-accessories">
+            <span>Home Accessories</span>
+        </a>
+    </li>
+    <li class="level2-li level2-bathroom">
+        <a href="http://www.dealz.ie/home-and-pet/around-the-home/bathroom-accessories">
+            <span>Bathroom Accessories</span>
+        </a>
+    </li>
+    <li class="level2-li level2-fuel">
+        <a href="http://www.dealz.ie/home-and-pet/around-the-home/fuel">
+            <span>Fuel</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                            </ul><ul class="level0-ul">
+                                <li class="level1-li level1-cleaning">
+                <a href="http://www.dealz.ie/home-and-pet/cleaning">
+                    <span>Cleaning</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-laundry">
+        <a href="http://www.dealz.ie/home-and-pet/cleaning/laundry">
+            <span>Laundry</span>
+        </a>
+    </li>
+    <li class="level2-li level2-washing-up">
+        <a href="http://www.dealz.ie/home-and-pet/cleaning/washing-up">
+            <span>Washing Up</span>
+        </a>
+    </li>
+    <li class="level2-li level2-hard-surface-cleaners">
+        <a href="http://www.dealz.ie/home-and-pet/cleaning/hard-surface-cleaners">
+            <span>Hard Surface Cleaners</span>
+        </a>
+    </li>
+    <li class="level2-li level2-bleach-and-disinfectant">
+        <a href="http://www.dealz.ie/home-and-pet/cleaning/toilet-cleaner-and-disinfectant">
+            <span>Toilet Cleaner &amp; Disinfectant</span>
+        </a>
+    </li>
+    <li class="level2-li level2-polish">
+        <a href="http://www.dealz.ie/home-and-pet/cleaning/polish">
+            <span>Polish</span>
+        </a>
+    </li>
+    <li class="level2-li level2-air-freshener">
+        <a href="http://www.dealz.ie/home-and-pet/cleaning/air-freshener">
+            <span>Air Freshener</span>
+        </a>
+    </li>
+    <li class="level2-li level2-cleaning-equipment">
+        <a href="http://www.dealz.ie/home-and-pet/cleaning/cleaning-equipment">
+            <span>Cleaning Equipment</span>
+        </a>
+    </li>
+    <li class="level2-li level2-floor-protection">
+        <a href="http://www.dealz.ie/home-and-pet/cleaning/floor-protection">
+            <span>Floor Protection</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                                <li class="level1-li level1-household-accessories">
+                <a href="http://www.dealz.ie/home-and-pet/household-accessories">
+                    <span>Household Accessories</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-kitchen-roll-and-tissue">
+        <a href="http://www.dealz.ie/home-and-pet/household-accessories/kitchen-roll-and-tissue">
+            <span>Kitchen Roll &amp; Toilet Tissue</span>
+        </a>
+    </li>
+    <li class="level2-li level2-shoe-care">
+        <a href="http://www.dealz.ie/home-and-pet/household-accessories/shoe-care">
+            <span>Shoe Care</span>
+        </a>
+    </li>
+    <li class="level2-li level2-waste-disposal">
+        <a href="http://www.dealz.ie/home-and-pet/household-accessories/waste-disposal">
+            <span>Waste Disposal</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                                <li class="level1-li level1-pets-and-animals">
+                <a href="http://www.dealz.ie/home-and-pet/pets-and-animals">
+                    <span>Pets &amp; Animals</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-dog">
+        <a href="http://www.dealz.ie/home-and-pet/pets-and-animals/dog-food">
+            <span>Dog Food</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/home-and-pet/pets-and-animals/dog-treats-chews">
+            <span>Dog Treats &amp; Chews</span>
+        </a>
+    </li>
+    <li class="level2-li level2-cat">
+        <a href="http://www.dealz.ie/home-and-pet/pets-and-animals/cat">
+            <span>Cat</span>
+        </a>
+    </li>
+    <li class="level2-li level2-small-pets-fish-and-bird">
+        <a href="http://www.dealz.ie/home-and-pet/pets-and-animals/small-pets-fish-and-bird">
+            <span>Small Pets, Fish &amp; Bird</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                        </ul>
+
+                                            <div style="clear:both;"></div>
+                </div>
+            </li>
+            <li class="level0-li  ">
+                <a class="level-top" href="http://www.dealz.ie/leisure-and-entertainment">
+                    <span class="fake-table"><span class="fake-cell">
+                    Leisure &amp; Entertainment                    </span></span>
+                </a>
+                <div class="level0-container">
+                        <ul class="level0-ul">
+                    <li class="level1-li level1-">
+                <a href="http://www.dealz.ie/leisure-and-entertainment/diy-time-with-tommy-walsh">
+                    <span>DIY:time with Tommy Walsh</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/diy-time-with-tommy-walsh/toolbox-essentials">
+            <span>Toolbox Essentials</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/diy-time-with-tommy-walsh/decorating-essentials">
+            <span>Decorating Essentials</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/diy-time-with-tommy-walsh/fixtures-and-fittings">
+            <span>Fixtures &amp; Fittings</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/diy-time-with-tommy-walsh/adhesives">
+            <span>Adhesives</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                                <li class="level1-li level1-entertainment">
+                <a href="http://www.dealz.ie/leisure-and-entertainment/entertainment">
+                    <span>Entertainment</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/entertainment/reading-glasses">
+            <span>Reading Glasses</span>
+        </a>
+    </li>
+    <li class="level2-li level2-mobile-phone-accessories">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/entertainment/mobile-phone-accessories">
+            <span>Mobile Phone Accessories</span>
+        </a>
+    </li>
+    <li class="level2-li level2-computer-accessories">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/entertainment/computer-accessories">
+            <span>Computer Accessories</span>
+        </a>
+    </li>
+    <li class="level2-li level2-tv-and-audio-accessories">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/entertainment/tv-and-audio-accessories">
+            <span>TV &amp; Audio Accessories</span>
+        </a>
+    </li>
+    <li class="level2-li level2-blank-media">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/entertainment/blank-media">
+            <span>Blank Media</span>
+        </a>
+    </li>
+    <li class="level2-li level2-car-and-bike">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/entertainment/car-and-bike">
+            <span>Car &amp; Bike</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/entertainment/smoking-accessories">
+            <span>Smoking Accessories</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                                <li class="level1-li level1-batteries">
+                <a href="http://www.dealz.ie/leisure-and-entertainment/batteries">
+                    <span>Batteries</span>
+                </a>
+                <ul class="level1-ul">
+                                    </ul>
+            </li>
+                            </ul><ul class="level0-ul">
+                                <li class="level1-li level1-">
+                <a href="http://www.dealz.ie/leisure-and-entertainment/cds">
+                    <span>CDs</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/cds/festival-headliners">
+            <span>Festival Headliners</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/cds/bestselling-cds">
+            <span>Bestselling CDs</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/cds/soundtracks">
+            <span>Soundtracks</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/cds/r-b-and-soul">
+            <span>R&amp;B and Soul</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/cds/rock">
+            <span>Rock</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/cds/indie-alternative">
+            <span>Indie &amp; Alternative</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/cds/pop">
+            <span>Pop</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/cds/classical">
+            <span>Classical</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/cds/rap-hip-hop">
+            <span>Rap &amp; Hip Hop</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/cds/easy-listening-and-jazz">
+            <span>Easy Listening &amp; Jazz</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/cds/dance">
+            <span>Dance</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/leisure-and-entertainment/cds/compilations">
+            <span>Compilations</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                        </ul>
+
+                                            <div style="clear:both;"></div>
+                </div>
+            </li>
+            <li class="level0-li  ">
+                <a class="level-top" href="http://www.dealz.ie/toys">
+                    <span class="fake-table"><span class="fake-cell">
+                    Toys                    </span></span>
+                </a>
+                <div class="level0-container">
+                        <ul class="level0-ul">
+                    <li class="level1-li level1-games">
+                <a href="http://www.dealz.ie/toys/games">
+                    <span>Games</span>
+                </a>
+                <ul class="level1-ul">
+                                    </ul>
+            </li>
+                                <li class="level1-li level1-play-and-learn">
+                <a href="http://www.dealz.ie/toys/play-and-learn">
+                    <span>Play &amp; Learn</span>
+                </a>
+                <ul class="level1-ul">
+                                    </ul>
+            </li>
+                                <li class="level1-li level1-">
+                <a href="http://www.dealz.ie/toys/dolls-figures">
+                    <span>Dolls &amp; Figures</span>
+                </a>
+                <ul class="level1-ul">
+                                    </ul>
+            </li>
+                            </ul><ul class="level0-ul">
+                                <li class="level1-li level1-">
+                <a href="http://www.dealz.ie/toys/soft-toys">
+                    <span>Soft Toys</span>
+                </a>
+                <ul class="level1-ul">
+                                    </ul>
+            </li>
+                                <li class="level1-li level1-">
+                <a href="http://www.dealz.ie/toys/star-wars">
+                    <span>Star Wars</span>
+                </a>
+                <ul class="level1-ul">
+                                    </ul>
+            </li>
+                        </ul>
+
+                                            <div style="clear:both;"></div>
+                </div>
+            </li>
+            <li class="level0-li  ">
+                <a class="level-top" href="http://www.dealz.ie/stationery-and-crafts">
+                    <span class="fake-table"><span class="fake-cell">
+                    Stationery &amp; Crafts                    </span></span>
+                </a>
+                <div class="level0-container">
+                        <ul class="level0-ul">
+                    <li class="level1-li level1-">
+                <a href="http://www.dealz.ie/stationery-and-crafts/coordinated-stationery-ranges">
+                    <span>Coordinated Stationery Ranges</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/stationery-and-crafts/coordinated-stationery-ranges/neon-stationery">
+            <span>Neon Stationery</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/stationery-and-crafts/coordinated-stationery-ranges/spots-stripes-stationery">
+            <span>Spots &amp; Stripes Stationery</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/stationery-and-crafts/coordinated-stationery-ranges/tropical-stationery">
+            <span>Tropical Stationery</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/stationery-and-crafts/coordinated-stationery-ranges/nu-stationery">
+            <span>Nu: Stationery</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/stationery-and-crafts/coordinated-stationery-ranges/kids-stationery">
+            <span>Kids' Stationery</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                                <li class="level1-li level1-kids-crafts">
+                <a href="http://www.dealz.ie/stationery-and-crafts/craft-and-activity">
+                    <span>Craft &amp; Activity</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-drawing-and-colouring">
+        <a href="http://www.dealz.ie/stationery-and-crafts/craft-and-activity/colouring-and-activity">
+            <span>Colouring &amp; Activity</span>
+        </a>
+    </li>
+    <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/stationery-and-crafts/craft-and-activity/craft-and-embellishments">
+            <span>Craft &amp; Embellishments</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                                <li class="level1-li level1-stationery">
+                <a href="http://www.dealz.ie/stationery-and-crafts/stationery">
+                    <span>Stationery</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-pens-pencils-and-writing">
+        <a href="http://www.dealz.ie/stationery-and-crafts/stationery/pens-pencils-and-highlighters">
+            <span>Pens, Pencils &amp; Highlighters</span>
+        </a>
+    </li>
+    <li class="level2-li level2-notebooks-and-pads">
+        <a href="http://www.dealz.ie/stationery-and-crafts/stationery/notebooks-pads-and-filing">
+            <span>Notebooks &amp; Pads</span>
+        </a>
+    </li>
+    <li class="level2-li level2-folders-and-filing">
+        <a href="http://www.dealz.ie/stationery-and-crafts/stationery/folders-and-filing">
+            <span>Folders &amp; Filing</span>
+        </a>
+    </li>
+    <li class="level2-li level2-essentials-and-equipment">
+        <a href="http://www.dealz.ie/stationery-and-crafts/stationery/office-essentials">
+            <span>School &amp; Office Essentials</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                            </ul><ul class="level0-ul">
+                                <li class="level1-li level1-">
+                <a href="http://www.dealz.ie/stationery-and-crafts/knitting-and-sewing">
+                    <span>Knitting &amp; Sewing</span>
+                </a>
+                <ul class="level1-ul">
+                        <li class="level2-li level2-">
+        <a href="http://www.dealz.ie/stationery-and-crafts/knitting-and-sewing/knitting-and-sewing-essentials">
+            <span>Knitting &amp; Sewing Essentials</span>
+        </a>
+    </li>
+    <li class="level2-li level2-knitting-and-sewing">
+        <a href="http://www.dealz.ie/stationery-and-crafts/knitting-and-sewing/knitting-yarn">
+            <span>Knitting Yarn</span>
+        </a>
+    </li>
+                </ul>
+            </li>
+                        </ul>
+
+                                            <div style="clear:both;"></div>
+                </div>
+            </li>
+            <li class="level0-li  last ">
+                <a class="level-top" href="http://www.dealz.ie/party-and-celebrations">
+                    <span class="fake-table"><span class="fake-cell">
+                    Party &amp; Celebrations                    </span></span>
+                </a>
+                <div class="level0-container">
+                        <ul class="level0-ul">
+                    <li class="level1-li level1-table-and-drinkware">
+                <a href="http://www.dealz.ie/party-and-celebrations/table-and-drinkware">
+                    <span>Table &amp; Drinkware</span>
+                </a>
+                <ul class="level1-ul">
+                                    </ul>
+            </li>
+                                <li class="level1-li level1-cards">
+                <a href="http://www.dealz.ie/party-and-celebrations/gift-bags-and-wrap">
+                    <span>Gift Bags &amp; Wrap</span>
+                </a>
+                <ul class="level1-ul">
+                                    </ul>
+            </li>
+                                <li class="level1-li level1-room-decorations">
+                <a href="http://www.dealz.ie/party-and-celebrations/room-and-table-decorations">
+                    <span>Room &amp; Table Decorations</span>
+                </a>
+                <ul class="level1-ul">
+                                    </ul>
+            </li>
+                            </ul><ul class="level0-ul">
+                                <li class="level1-li level1-party-accessories">
+                <a href="http://www.dealz.ie/party-and-celebrations/party-accessories">
+                    <span>Party Accessories</span>
+                </a>
+                <ul class="level1-ul">
+                                    </ul>
+            </li>
+                        </ul>
+
+                                            <div style="clear:both;"></div>
+                </div>
+            </li>
+    </ul>
+</div>
+                        <div class="header-key-messages">
+    <ul>
+        <li class="key-message"><a href="/store-finder/">Find Your Nearest Dealz Store ></a></li>
+        <li class="key-sep"></li>
+        <li class="key-message"><a href="/about-us/charity/">Support The Make-A-Wish Charity ></a></li>
+        <li class="key-sep"></li>
+        <li class="key-message"><a href="/great-ideas/">Read These Great Ideas From Our Team ></a></li>
+    </ul>
+</div>                    </div>
+    </div>
+</div>
+        <div class="main-margins">
+            <div class="main-container col2-left-layout">
+                <div class="main">
+                    <div class="breadcrumbs">
+    <ul>
+                    <li class="home">
+                            <a href="http://www.dealz.ie/" title="Go to Home Page">Home</a>
+                                        <span> &gt; </span>
+                        </li>
+                    <li class="category568">
+                            <a href="http://www.dealz.ie/food-and-drink" title="">Food &amp; Drink</a>
+                                        <span> &gt; </span>
+                        </li>
+                    <li class="category585">
+                            <strong>Sweets &amp; Snacks</strong>
+                                    </li>
+            </ul>
+</div>
+                    <div class="col-main">
+                        <!--{GLOBAL_MESSAGES_aae3749ba9c2e308ffa9c240ac185959}--><!--/{GLOBAL_MESSAGES_aae3749ba9c2e308ffa9c240ac185959}-->                        <h1 class="cat-title">Sweets &amp; Snacks</h1><div class="level-1-subcat-list widget-block-type1">
+    <ul class="cat-list">
+                <li>
+            <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/retro-sweets">
+                <span class="cat-label">Retro Sweets</span>
+                                        <img src="http://www.dealz.ie/media/catalog/product/cache/2/category-thumbnails/242x207/9df78eab33525d08d6e5fb8d27136e95/catalog/category/Retro_Sweets_1.jpg" alt="Retro Sweets category image" />
+                                </a>
+        </li>
+                <li>
+            <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/sweets">
+                <span class="cat-label">Sweets</span>
+                                        <img src="http://www.dealz.ie/media/catalog/product/cache/2/category-thumbnails/242x207/9df78eab33525d08d6e5fb8d27136e95/catalog/category/Sweets_mints_and_gum_2.jpg" alt="Sweets category image" />
+                                </a>
+        </li>
+                <li>
+            <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/mints-and-chewing-gum">
+                <span class="cat-label">Mints &amp; Chewing Gum</span>
+                                        <img src="http://www.dealz.ie/media/catalog/product/cache/2/category-thumbnails/242x207/9df78eab33525d08d6e5fb8d27136e95/catalog/category/DZ_Chewing_Gum.jpg" alt="Mints &amp; Chewing Gum category image" />
+                                </a>
+        </li>
+                <li>
+            <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/ashleys-family-treats">
+                <span class="cat-label">Ashley's Family Treats</span>
+                                        <img src="http://www.dealz.ie/media/catalog/product/cache/2/category-thumbnails/242x207/9df78eab33525d08d6e5fb8d27136e95/catalog/category/Ashleys_Family_Treats_Thumbnail_DZ_1.jpg" alt="Ashley's Family Treats category image" />
+                                </a>
+        </li>
+                <li>
+            <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/sweet-heaven">
+                <span class="cat-label">Sweet Heaven</span>
+                                        <img src="http://www.dealz.ie/media/catalog/product/cache/2/category-thumbnails/242x207/9df78eab33525d08d6e5fb8d27136e95/catalog/category/Sweet_Heaven_1.jpg" alt="Sweet Heaven category image" />
+                                </a>
+        </li>
+                <li>
+            <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/crisps-and-snacks">
+                <span class="cat-label">Crisps &amp; Snacks</span>
+                                        <img src="http://www.dealz.ie/media/catalog/product/cache/2/category-thumbnails/242x207/9df78eab33525d08d6e5fb8d27136e95/catalog/category/Irish_crisps_DZ.jpg" alt="Crisps &amp; Snacks category image" />
+                                </a>
+        </li>
+                <li>
+            <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/fruit-nut">
+                <span class="cat-label">Fruit &amp; Nut</span>
+                                        <img src="http://www.dealz.ie/media/catalog/product/cache/2/category-thumbnails/242x207/9df78eab33525d08d6e5fb8d27136e95/catalog/category/Nuts_Thumbnail_DZ.jpg" alt="Fruit &amp; Nut category image" />
+                                </a>
+        </li>
+                <li>
+            <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/weight-watchers">
+                <span class="cat-label">Weight Watchers</span>
+                                        <img src="http://www.dealz.ie/media/catalog/product/cache/2/category-thumbnails/242x207/9df78eab33525d08d6e5fb8d27136e95/catalog/category/Weight_Watchers_1.jpg" alt="Weight Watchers category image" />
+                                </a>
+        </li>
+            </ul>
+    <div style="clear:both"></div>
+</div>
+<div class="bestselling-products widget-block-type1 border-block">
+    <div class="title-wrap">
+        <span class="tab"></span>
+                    <h2 class="title"><em>Best Sellers</em> - Products our customers can't get enough of</h2>
+            </div>
+    <div class="product-carousel">
+    <ul class="product-carousel-ul jcarousel-skin-product">
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/flying-saucers-47g" title="Flying Saucers 47g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/9/1/91068_22.jpg" alt="Flying Saucers 47g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/flying-saucers-47g" title="Flying Saucers 47g">Flying Saucers 47g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/nestle-polo-tube-5-pack" title="Nestle Polo Tube 5 Pack" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/5/9/59370_30.jpg" alt="Nestle Polo Tube 5 Pack" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/nestle-polo-tube-5-pack" title="Nestle Polo Tube 5 Pack">Nestle Polo Tube 5 Pack</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/weight-watchers-ready-salted-crinkle-crisps-6-pack-614" title="Weight Watchers Ready Salted Crinkle Crisps 6 Pack" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/2/125570.jpg" alt="Weight Watchers Ready Salted Crinkle Crisps 6 Pack" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/weight-watchers-ready-salted-crinkle-crisps-6-pack-614" title="Weight Watchers Ready Salted Crinkle Crisps 6 Pack">Weight Watchers Ready Salted Crinkle Crisps 6 Pack</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/pringles-original-40g" title="Pringles Original 40g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/9/8/98230_1.jpg" alt="Pringles Original 40g" />
+                                                                        <img alt="3 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/217/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/pringles-original-40g" title="Pringles Original 40g">Pringles Original 40g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/sweet-heaven-dark-chocolate-limes-270g-1" title="Sweet Heaven Dark Chocolate Limes 270g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/7/172552.jpg" alt="Sweet Heaven Dark Chocolate Limes 270g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/sweet-heaven-dark-chocolate-limes-270g-1" title="Sweet Heaven Dark Chocolate Limes 270g">Sweet Heaven Dark Chocolate Limes 270g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/whitworths-almonds-100g" title="Whitworths Almonds 100g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/8/180831.jpg" alt="Whitworths Almonds 100g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/whitworths-almonds-100g" title="Whitworths Almonds 100g">Whitworths Almonds 100g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/haribo-chamallows-215g" title="Haribo Chamallows 215g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/0/10487_9.jpg" alt="Haribo Chamallows 215g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/haribo-chamallows-215g" title="Haribo Chamallows 215g">Haribo Chamallows 215g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/spearmint-polo-5-pack" title="Spearmint Polo 5 Pack" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/2/121996.jpg" alt="Spearmint Polo 5 Pack" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/spearmint-polo-5-pack" title="Spearmint Polo 5 Pack">Spearmint Polo 5 Pack</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/fizz-with-lolly-8-pack-112g" title="Fizz With Lolly 8 Pack 112g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/2/129706_1.jpg" alt="Fizz With Lolly 8 Pack 112g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/fizz-with-lolly-8-pack-112g" title="Fizz With Lolly 8 Pack 112g">Fizz With Lolly 8 Pack 112g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/sweet-heaven-milk-chocolate-peanuts-230g" title="Sweet Heaven Milk Chocolate Peanuts 230g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/2/123629_7.jpg" alt="Sweet Heaven Milk Chocolate Peanuts 230g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/sweet-heaven-milk-chocolate-peanuts-230g" title="Sweet Heaven Milk Chocolate Peanuts 230g">Sweet Heaven Milk Chocolate Peanuts 230g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/weight-watchers-roast-chicken-crinkle-crisps-6-pk" title="Weight Watchers Roast Chicken Crinkle Crisps 6 Pk" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/2/125571.jpg" alt="Weight Watchers Roast Chicken Crinkle Crisps 6 Pk" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/weight-watchers-roast-chicken-crinkle-crisps-6-pk" title="Weight Watchers Roast Chicken Crinkle Crisps 6 Pk">Weight Watchers Roast Chicken Crinkle Crisps 6 Pk</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/pringles-sour-cream-onion-40g" title="Pringles Sour Cream &amp; Onion 40g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/9/8/98229_1.jpg" alt="Pringles Sour Cream &amp; Onion 40g" />
+                                                                        <img alt="3 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/217/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/pringles-sour-cream-onion-40g" title="Pringles Sour Cream &amp; Onion 40g">Pringles Sour Cream &amp; Onion 40g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/whitworths-nutty-nibbles-pistachios-in-shells-90g" title="Whitworths Nutty Nibbles Pistachios In Shells 90g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/8/180829.jpg" alt="Whitworths Nutty Nibbles Pistachios In Shells 90g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/whitworths-nutty-nibbles-pistachios-in-shells-90g" title="Whitworths Nutty Nibbles Pistachios In Shells 90g">Whitworths Nutty Nibbles Pistachios In Shells 90g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/triple-x-mints-tube-5-pack" title="Triple X Mints Tube 5 Pack" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/9/0/9011.jpg" alt="Triple X Mints Tube 5 Pack" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/triple-x-mints-tube-5-pack" title="Triple X Mints Tube 5 Pack">Triple X Mints Tube 5 Pack</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/mini-fizzy-rainbow-belts-350g" title="Mini Fizzy Rainbow Belts 350g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/2/128547_10.jpg" alt="Mini Fizzy Rainbow Belts 350g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/mini-fizzy-rainbow-belts-350g" title="Mini Fizzy Rainbow Belts 350g">Mini Fizzy Rainbow Belts 350g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/sweet-heaven-milk-chocolate-brazils-175g" title="Sweet Heaven Milk Chocolate Brazils 175g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/0/101600_33.jpg" alt="Sweet Heaven Milk Chocolate Brazils 175g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/sweet-heaven-milk-chocolate-brazils-175g" title="Sweet Heaven Milk Chocolate Brazils 175g">Sweet Heaven Milk Chocolate Brazils 175g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/weight-watchers-sour-cream-crinkle-crisps-6-pack" title="Weight Watchers Sour Cream Crinkle Crisps 6 Pack" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/9/5/95159_45.jpg" alt="Weight Watchers Sour Cream Crinkle Crisps 6 Pack" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/weight-watchers-sour-cream-crinkle-crisps-6-pack" title="Weight Watchers Sour Cream Crinkle Crisps 6 Pack">Weight Watchers Sour Cream Crinkle Crisps 6 Pack</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/haribo-starmix-20-extra-free" title="Haribo Starmix 20% Extra Free" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/6/0/60975_3.jpg" alt="Haribo Starmix 20% Extra Free" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/haribo-starmix-20-extra-free" title="Haribo Starmix 20% Extra Free">Haribo Starmix 20% Extra Free</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/pringles-salt-vinegar-40g" title="Pringles Salt &amp; Vinegar 40g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/4/145297.jpg" alt="Pringles Salt &amp; Vinegar 40g" />
+                                                                        <img alt="3 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/217/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/pringles-salt-vinegar-40g" title="Pringles Salt &amp; Vinegar 40g">Pringles Salt &amp; Vinegar 40g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/200g-whitworths-sunflower-seed" title="200g Whitworths Sunflower Seed" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/8/180827.jpg" alt="200g Whitworths Sunflower Seed" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/200g-whitworths-sunflower-seed" title="200g Whitworths Sunflower Seed">200g Whitworths Sunflower Seed</a>
+                </h2>
+            </div>
+        </li>
+            </ul>
+    <div style="clear:both"></div>
+</div>
+</div>
+<div class="newin-products widget-block-type1 border-block">
+    <div class="title-wrap">
+        <span class="tab"></span>
+        <h2 class="title"><em>Amazing Value</em></h2>
+    </div>
+    <div class="product-carousel">
+    <ul class="product-carousel-ul jcarousel-skin-product">
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/beefy-balls-230g" title="Beefy Balls 230g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/2/128999_1.jpg" alt="Beefy Balls 230g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/beefy-balls-230g" title="Beefy Balls 230g">Beefy Balls 230g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/peanut-brittle-240g" title="Peanut Brittle 240g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/2/128562_1.jpg" alt="Peanut Brittle 240g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/peanut-brittle-240g" title="Peanut Brittle 240g">Peanut Brittle 240g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/chocolate-cinder-toffee-150g" title="Chocolate Cinder Toffee 150g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/2/128565_4.jpg" alt="Chocolate Cinder Toffee 150g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/chocolate-cinder-toffee-150g" title="Chocolate Cinder Toffee 150g">Chocolate Cinder Toffee 150g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/black-jacks-fruit-salad-230g" title="Black Jacks &amp; Fruit Salad 230g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/2/128560_9.jpg" alt="Black Jacks &amp; Fruit Salad 230g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/black-jacks-fruit-salad-230g" title="Black Jacks &amp; Fruit Salad 230g">Black Jacks &amp; Fruit Salad 230g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/blue-raspberry-bon-bons-300g" title="Blue Raspberry Bon Bons 300g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/2/128550_20.jpg" alt="Blue Raspberry Bon Bons 300g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/blue-raspberry-bon-bons-300g" title="Blue Raspberry Bon Bons 300g">Blue Raspberry Bon Bons 300g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/onion-rings-230g" title="Onion Rings 230g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/2/129006_25.jpg" alt="Onion Rings 230g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/onion-rings-230g" title="Onion Rings 230g">Onion Rings 230g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/assorted-toffee-whirls-200g" title="Assorted Toffee Whirls 200g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/1/2/128631_36.jpg" alt="Assorted Toffee Whirls 200g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/assorted-toffee-whirls-200g" title="Assorted Toffee Whirls 200g">Assorted Toffee Whirls 200g</a>
+                </h2>
+            </div>
+        </li>
+                <li class="product-item">
+            <div class="inner">
+                                <a href="http://www.dealz.ie/swizzels-loads-of-chews-189g" title="Swizzels Loads Of Chews 189g" class="product-image">
+                    <img class="image" src="http://www.dealz.ie/media/catalog/product/cache/2/small_image/124x/9df78eab33525d08d6e5fb8d27136e95/8/6/86452_46.jpg" alt="Swizzels Loads Of Chews 189g" />
+                                                                        <img alt="1 for €1.50" class="product-image-overlay badge" src="http://www.dealz.ie/media/catalog/product/cache/2/product-image-overlays/72x/9df78eab33525d08d6e5fb8d27136e95/imageoverlays/220/2/imageoverlay.png" />                                                                                    </a>
+                <h2 class="product-name">
+                    <a href="http://www.dealz.ie/swizzels-loads-of-chews-189g" title="Swizzels Loads Of Chews 189g">Swizzels Loads Of Chews 189g</a>
+                </h2>
+            </div>
+        </li>
+            </ul>
+    <div style="clear:both"></div>
+</div>
+</div>
+                    </div>
+                    <div class="col-left sidebar"><div class="block block-layered-nav">
+    <div class="block-title">
+        <span class="tab"></span>
+        <strong><span>Food &amp; Drink</span></strong>
+    </div>
+    <div class="block-content">
+        <ul>
+                                <li class="level-top">
+                <a href="http://www.dealz.ie/food-and-drink/grocery">Grocery</a>
+                            </li>
+                                            <li class="level-top">
+                <a href="http://www.dealz.ie/food-and-drink/chocolate">Chocolate</a>
+                            </li>
+                                            <li class="level-top current">
+                <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks">Sweets &amp; Snacks</a>
+                                        <ul class="level0-ul">
+                    <li class="level1-li level1-">
+                <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/retro-sweets">
+                    <span>Retro Sweets</span>
+                </a>
+            </li>
+                    <li class="level1-li level1-sweets-and-mints">
+                <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/sweets">
+                    <span>Sweets</span>
+                </a>
+            </li>
+                    <li class="level1-li level1-">
+                <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/mints-and-chewing-gum">
+                    <span>Mints &amp; Chewing Gum</span>
+                </a>
+            </li>
+                    <li class="level1-li level1-">
+                <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/ashleys-family-treats">
+                    <span>Ashley's Family Treats</span>
+                </a>
+            </li>
+                    <li class="level1-li level1-sweet-heaven">
+                <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/sweet-heaven">
+                    <span>Sweet Heaven</span>
+                </a>
+            </li>
+                    <li class="level1-li level1-crisps-and-snacks">
+                <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/crisps-and-snacks">
+                    <span>Crisps &amp; Snacks</span>
+                </a>
+            </li>
+                    <li class="level1-li level1-fruit-nut">
+                <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/fruit-nut">
+                    <span>Fruit &amp; Nut</span>
+                </a>
+            </li>
+                    <li class="level1-li level1-weight-watchers">
+                <a href="http://www.dealz.ie/food-and-drink/sweets-and-snacks/weight-watchers">
+                    <span>Weight Watchers</span>
+                </a>
+            </li>
+            </ul>
+                            </li>
+                                            <li class="level-top">
+                <a href="http://www.dealz.ie/food-and-drink/cakes-biscuits-and-hot-drinks">Cakes, Biscuits &amp; Hot Drinks</a>
+                            </li>
+                                            <li class="level-top">
+                <a href="http://www.dealz.ie/food-and-drink/soft-drinks">Soft Drinks</a>
+                            </li>
+                            </ul>
+        <script type="text/javascript">decorateDataList('narrow-by-list2')</script>
+    </div>
+</div>
+</div>
+                </div>
+                <div class="col1-pre-footer">
+    <div class="brands-list">
+    <div class="title-wrap">
+        <h2 class="title">Big brands cost less at</h2>
+        <h2 class="title-brand">Dealz</h2>
+        <a class="view-all" href="http://www.dealz.ie/brands/">view all brands</a>
+    </div>
+                <ul class="brands-ul">
+                        <li class="border-block">
+                <a href="http://www.dealz.ie/brands/odlums/">
+                                        <img alt="" src="http://www.dealz.ie/media/catalog/product/cache/2/category-images/91x53/9df78eab33525d08d6e5fb8d27136e95/catalog/category/Odlums_2.jpg" />
+                                    </a>
+            </li>
+                        <li class="border-block">
+                <a href="http://www.dealz.ie/brands/cadbury/">
+                                        <img alt="" src="http://www.dealz.ie/media/catalog/product/cache/2/category-images/91x53/9df78eab33525d08d6e5fb8d27136e95/catalog/category/cadbury-logo_1.png" />
+                                    </a>
+            </li>
+                        <li class="border-block">
+                <a href="http://www.dealz.ie/brands/colgate-palmolive/">
+                                        <img alt="" src="http://www.dealz.ie/media/catalog/product/cache/2/category-images/91x53/9df78eab33525d08d6e5fb8d27136e95/catalog/category/colgate-logo.png" />
+                                    </a>
+            </li>
+                        <li class="border-block">
+                <a href="http://www.dealz.ie/brands/nestle/">
+                                        <img alt="" src="http://www.dealz.ie/media/catalog/product/cache/2/category-images/91x53/9df78eab33525d08d6e5fb8d27136e95/catalog/category/Nestle.jpg" />
+                                    </a>
+            </li>
+                        <li class="border-block">
+                <a href="http://www.dealz.ie/brands/johnson-and-johnson/">
+                                        <img alt="" src="http://www.dealz.ie/media/catalog/product/cache/2/category-images/91x53/9df78eab33525d08d6e5fb8d27136e95/catalog/category/johnson-johnson-logo.png" />
+                                    </a>
+            </li>
+                        <li class="border-block">
+                <a href="http://www.dealz.ie/brands/heinz/">
+                                        <img alt="" src="http://www.dealz.ie/media/catalog/product/cache/2/category-images/91x53/9df78eab33525d08d6e5fb8d27136e95/catalog/category/heinz-logo.png" />
+                                    </a>
+            </li>
+                        <li class="border-block">
+                <a href="http://www.dealz.ie/brands/fairy/">
+                                        <img alt="" src="http://www.dealz.ie/media/catalog/product/cache/2/category-images/91x53/9df78eab33525d08d6e5fb8d27136e95/catalog/category/Fairy-logo-correct.jpg" />
+                                    </a>
+            </li>
+                        <li class="border-block">
+                <a href="http://www.dealz.ie/brands/pepsi/">
+                                        <img alt="" src="http://www.dealz.ie/media/catalog/product/cache/2/category-images/91x53/9df78eab33525d08d6e5fb8d27136e95/catalog/category/pepsi-logo.png" />
+                                    </a>
+            </li>
+                        <li class="border-block">
+                <a href="http://www.dealz.ie/brands/finish/">
+                                        <img alt="" src="http://www.dealz.ie/media/catalog/product/cache/2/category-images/91x53/9df78eab33525d08d6e5fb8d27136e95/catalog/category/Finish_Logo.jpg" />
+                                    </a>
+            </li>
+                        <li class="border-block">
+                <a href="http://www.dealz.ie/brands/coca-cola/">
+                                        <img alt="" src="http://www.dealz.ie/media/catalog/product/cache/2/category-images/91x53/9df78eab33525d08d6e5fb8d27136e95/catalog/category/Coca-cola-logo4_1.jpg" />
+                                    </a>
+            </li>
+                    </ul>
+        <div style="clear:both"></div>
+</div>
+</div>
+            </div>
+        </div>
+        <div class="global-promo-cms">
+    <div class="global-promo-cms-item global-promo-cms-item1">
+        <a href="http://www.dealz.ie/valentines-day/" onClick="_gaq.push(['_trackEvent','GlobalPromo','Click','Valentine's Day']);"><img src="http://www.dealz.ie/media/wysiwyg/Global-Promo-Dealz/Val18_DZ_Global_Promo_304x172_POUN3746.jpg" alt="Valentine's Day" /></a>
+
+<!--
+
+PREVIOUS BELOW...
+
+<a href="http://www.dealz.ie/health-and-beauty/make-up-gallery/" onClick="_gaq.push(['_trackEvent','GlobalPromo','Click','Make Up Gallery']);"><img src="http://www.dealz.ie/media/wysiwyg/Global-Promo-Dealz/promo.jpg" alt="Make Up Gallery" /></a>
+
+OR...
+
+<a href="http://www.dealz.ie/promotions/summer-sale/" onClick="_gaq.push(['_trackEvent','GlobalPromo','Click','Summer Sale!']);"><img src="http://www.dealz.ie/media/wysiwyg/Global-Promo-Dealz/75c-Global-Promo-304x172.jpg" alt="Summer Sale" /></a>
+
+-->
+
+<img src="http://www.dealz.ie/media/wysiwyg/Global-Promo-Dealz/75c-Global-Promo-304x172_1.jpg" alt="" />    </div>
+    <div class="global-promo-cms-item global-promo-cms-item2">
+        <a href="http://www.facebook.com/dealzireland" onClick="_gaq.push(['_trackEvent','GlobalPromo','Click','Like Dealz on Facebook']);"><img src="http://www.dealz.ie/media/wysiwyg/Global-Promo-Dealz/Global-Promo-Facebook-DZ_1.png" alt="Like Dealz Ireland on Facebook" /></a>
+
+<!--PREVIOUS SPOT
+<a href="/offers-and-promotions/" onClick="_gaq.push(['_trackEvent','GlobalPromo','Click','€3 Offers']);"><img src="http://www.dealz.ie/media/wysiwyg/Global-Promo-Dealz/POUN3445_G_3_Global-Promo_305x172.jpg" alt="€3 Offers" /></a>
+-->    </div>
+    <div class="global-promo-cms-item global-promo-cms-item3">
+        <a href="http://www.dealz.ie/offers-and-promotions/75c-food-drink/" onClick="_gaq.push(['_trackEvent','GlobalPromo','Click','75c Offers']);"><img src="http://www.dealz.ie/media/wysiwyg/Global-Promo-Dealz/75c-Global-Promo-304x172_1.jpg" alt="75c Offers" /></a>
+
+<!-- PREVIOUS SPOT BELOW
+
+<a href="http://www.dealz.ie/help/customer-notice/" onClick="_gaq.push(['_trackEvent','GlobalPromo','Click','Heated Hugs Recall']);"><img src="http://www.dealz.ie/media/wysiwyg/Global-Promo/customer_notice_v2.jpg" alt="Heated Hugs Recall" /></a>
+
+<a href="http://www.dealz.ie/health-and-beauty/healthcare/family-planning/" onClick="_gaq.push(['_trackEvent','GlobalPromo','Click','Get Some Nooky!']);"><img src="http://www.dealz.ie/media/wysiwyg/Global-Promo-Dealz/POUN3669_Nooky_Global_Promo_Spot_304x172_DZ_v2.jpg" alt="Get Some Nooky!" /></a>
+
+<a href="http://www.dealz.ie/home-and-pet/pets-and-animals/" onClick="_gaq.push(['_trackEvent','GlobalPromo','Click','The Pet Event']);"><img src="http://www.dealz.ie/media/wysiwyg/Global-Promo-Dealz/DEALZ_Pet_Event_Global_Promo_320x172_.jpg" alt="The Pet Event" /></a>
+
+<a href="http://www.dealz.ie/promotions/summer-sale/" onClick="_gaq.push(['_trackEvent','GlobalPromo','Click','Summer Sale!']);"><img src="http://www.dealz.ie/media/wysiwyg/Global-Promo-Dealz/75c-Global-Promo-304x172.jpg" alt="Summer Sale" /></a>
+
+<a href="http://www.dealz.ie/food-and-drink/soft-drinks/fizzy-drinks-and-cola/" onClick="_gaq.push(['_trackEvent','GlobalPromo','Click','Coke Zero']);"><img src="http://www.dealz.ie/media/wysiwyg/Global-Promo-Dealz/COKE_ZERO_DEALZ_WEB_BANNER_4_305_x172_V2.jpg" alt="Coke Zero" /></a>
+
+<a href="http://www.dealz.ie/leisure-and-entertainment/entertainment/car-and-bike" onClick="_gaq.push(['_trackEvent','GlobalPromo','Click','Winter Essentials']);"><img src="http://www.dealz.ie/media/wysiwyg/Global-Promo-Dealz/Winter-DZ.jpg" alt="Winter Essentials" /></a>
+-->
+
+
+    </div>
+</div>
+<div id="recently-viewed"></div><div class="footer-container">
+    <div class="footer-margins">
+        <div class="footer">
+            <a class="brand" href="http://www.dealz.ie/">Dealz</a>
+            <span class="tagline">Amazing <em>Value</em> Everyday!</span>
+            <div class="footer-links-block footer-block-about">
+                <h3 class="footer-title">
+                    <a href="http://www.dealz.ie/about-us/">About Us</a>
+                </h3>
+                <ul class="links">
+                        <li class="first" ><a href="http://www.dealz.ie/about-us/our-values/" title="Our Values" >Our Values</a></li>
+                                <li ><a href="http://www.dealz.ie/about-us/our-history/" title="Our History" >Our History</a></li>
+                                <li ><a href="http://www.dealz.ie/store-finder/" title="Store Finder" >Store Finder</a></li>
+                                <li ><a href="http://www.dealz.ie/about-us/new-stores/" title="New Stores" >New Stores</a></li>
+                                <li ><a href="http://www.dealz.ie/about-us/charity/" title="Charity" >Charity</a></li>
+                                <li class=" last" ><a href="http://www.dealz.ie/about-us/awards/" title="Awards" >Awards</a></li>
+            </ul>
+                <h3 class="footer-title">
+                    <a href="http://www.poundlandcareers.co.uk/">Careers</a>
+                </h3>
+            </div>
+            <div class="footer-links-block footer-block-help-legal">
+                <h3 class="footer-title">
+                    <a href="http://www.dealz.ie/help/">Help</a>
+                </h3>
+                <ul class="links">
+                        <li class="first" ><a href="http://www.dealz.ie/help/faqs/" title="FAQs" >FAQs</a></li>
+                                <li ><a href="http://www.dealz.ie/help/contact-us/" title="Contact Us" >Contact Us</a></li>
+                                <li class=" last" ><a href="http://www.dealz.ie/sitemap/" title="Sitemap" >Sitemap</a></li>
+            </ul>
+                <h3 class="footer-title">
+                    <a href="http://www.dealz.ie/legal/">Legal</a>
+                </h3>
+                <ul class="links">
+                        <li class="first" ><a href="http://www.dealz.ie/legal/privacy-cookie-policy/" title="Privacy &amp; Cookie Policy" >Privacy &amp; Cookie Policy</a></li>
+                                <li class=" last" ><a href="http://www.dealz.ie/legal/terms-of-use/" title="Terms of Use" >Terms of Use</a></li>
+            </ul>
+            </div>
+            <div class="footer-links-block footer-block-corporate">
+                <h3 class="footer-title">
+                    <a href="http://www.dealz.ie/corporate-information/">Corporate</a>
+                </h3>
+                <ul class="links">
+                        <li class="first" ><a href="http://www.dealz.ie/corporate-information/directors/" title="Directors" >Directors</a></li>
+                                <li ><a href="http://www.dealz.ie/corporate-information/trading-team/" title="Trading Team" >Trading Team</a></li>
+                                <li ><a href="http://www.dealz.ie/corporate-information/how-to-find-us/" title="How To Find Us" >How to Find Us</a></li>
+                                <li ><a href="http://www.dealz.ie/corporate-information/press-centre/" title="Press Centre" >Press Centre</a></li>
+                                <li ><a href="http://www.poundlandcorporate.com/" title="Investor Relations" >Investor Relations</a></li>
+                                <li ><a href="http://www.dealz.ie/corporate-information/suppliers/" title="Suppliers" >Suppliers</a></li>
+                                <li class=" last" ><a href="http://www.dealz.ie/corporate-information/corporate-social-responsibility/" title="CSR" >CSR</a></li>
+            </ul>
+            </div>
+            <div class="footer-block-social">
+    <h3 class="footer-title">Join the Conversation</h3>
+        <ul class="social-icons">
+                    <li class="twitter"><a class="link" rel="external" href="https://twitter.com/DealzIreland" title="Twitter">Twitter</a></li>
+                            <li class="facebook"><a class="link" rel="external" href="https://www.facebook.com/DealzIreland" title="Facebook">Facebook</a></li>
+                            </ul>
+    </div>
+            <form action="javascript:void(0)" method="post" id="newsletter-validate-detail">
+    <div class="form-subscribe">
+        <div class="form-subscribe-header">
+            <h3 class="footer-title">Become a Dealz VIP!</h3>
+            <label for="input-email-footer" class="newsletter-label">Enter your email to get weekly news and offers!</label>
+        </div>
+        <div id="email-subscribe-footer">
+            <div class="v-fix"><input id="input-email-footer" name="email" type="text" class="input-text required-entry validate-email" /></div>
+            <button type="submit" class="button" title="Sign Up"><span><span>Sign Up</span></span></button>
+        </div>
+    </div>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    
+    var newsletter = new Poundland.Newsletter(
+        newsletterSubscriberFormDetail, 
+        'http://www.dealz.ie/poundland-newsletter/subscriber/new/',
+        'input-email-footer',
+        'email-subscribe-footer',
+        'subscribe-success-message',
+        'validation-advice'
+    );    
+//]]>
+</script>            <div class="footer-block-charity">
+    <h3 class="footer-title">We Support</h3>
+    <ul class="charity-links">
+        <li class="make-a-wish">
+            <a href="http://www.makeawish.ie/" class="link">Make a Wish Ireland</a>
+        </li>
+    </ul>
+</div>            <p class="footer-mobile-switcher">
+    Viewing this site on a mobile device?    <strong>
+        <a class="link" href="http://www.dealz.ie/mobile-switcher/index/index/mode/mobile_on/">
+            Switch to the mobile version &gt;        </a>
+    </strong>
+</p>
+        </div>
+    </div>
+</div>
+<address class="copyright">
+    <div class="copyright-inner">
+        <p class="products-note">Please note that not all products are available at all stores and some products are seasonal.</p>
+        <span class="copyright-text">&copy; Poundland Limited 2012 - 2018. Dealz is a registered business name of Poundland Limited.</span><span class="sep"></span>
+<span class="copyright-address">Dealz is registered as a branch in the Republic of Ireland under Company Number 906668 with its branch office at Unit 3, West End Retail Park, Blanchardstown, Dublin 15, Ireland</span>    </div>
+</address>        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><script type="text/javascript">jQuery.noConflict();</script>
+                        <script type="text/javascript">
+    //<![CDATA[
+        var skinUrl = 'http://www.dealz.ie/skin/frontend/enterprise/dealz-desktop/';
+    //]]>
+</script>
+<script type="text/javascript" src="http://www.dealz.ie/js/poundland/underscore.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/poundland/backbone-min.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/js/poundland/backbone.settings.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/js/scripts-global.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/js/anythingslider/js/jquery.anythingslider.min.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/js/jcarousel/lib/jquery.jcarousel.min.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/js/modernizr/modernizr.custom.32360.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/js/prefixfree/prefixfree.min.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/js/underscore-1.7.0.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/js/email-lightbox.js?v=1513161537231"></script>
+<script type="text/javascript" src="http://www.dealz.ie/skin/frontend/enterprise/poundland-desktop/js/scripts-catalog.js?v=1513161537231"></script>
+<script type="text/javascript">
+    //<![CDATA[
+        jQuery('#newsletter').addPlaceholder('Email address');
+        jQuery('#store-locator-input').addPlaceholder('eg. Dublin');
+        jQuery('#lightbox-email-from').addPlaceholder('Enter your email address');
+        jQuery('#lightbox-email-to').addPlaceholder('Enter email address to send to');
+        jQuery('#nearby-store-input').addPlaceholder('eg. Dublin');
+        jQuery('#top-newsletter').addPlaceholder('Enter your email address');
+        jQuery('#wordpress-search').addPlaceholder('Search Great Ideas');
+    //]]>
+</script>
+<script type="text/javascript">
+// <![CDATA[
+(function($) {
+    var recentlyViewed = new Poundland.RecentlyViewed({
+        'requestUrl': 'http://www.dealz.ie/ampersand_ajaxrecentlyviewed/ajax/recentlyViewed/',
+        'currentProductId' : '',
+        'recentlyViewedId': 'recently-viewed',
+        'toCallback': createRecentlyViewedCarousel
+    });
+    
+    recentlyViewed.getRecentlyViewed();
+})(Prototype);
+// ]]>
+</script>
+    <div class="lightbox-wrap js-newsletter-lightbox">
+        <form action="http://www.dealz.ie/poundland-newsletter/subscriber/new/" method="post" id="lightbox-email-signup" class="js-lightbox-email-signup" novalidate>
+            <span class="close-icon js-close-signup"></span>
+            <img width="200" height="240" src="http://www.dealz.ie/media/wysiwyg/Dealz-Logo-sign.png">            <div class="js-form-wrap">
+    <h6>Signup for our newsletter</h6><p class="intro">Join us for the latest news, offers & ideas from Dealz.</p>    <div class="input-box">
+        <label for="firstname-signup">First name<em>*</em></label>
+        <input id="firstname-signup" name="firstname" type="text" class="input-text required-entry" />
+    </div>
+
+    <div class="input-box">
+        <label for="lastname-signup">Last name<em>*</em></label>
+        <input id="lastname-signup" name="lastname" type="text" class="input-text required-entry"/>
+    </div>
+
+    <div class="input-box">
+        <label for="email-signup">Email<em>*</em></label>
+        <input id="email-signup" name="email" type="email"  class="input-text required-entry validate-email" />
+    </div>
+
+    <div class="input-box lightbox-postcode">
+        <label for="postcode-signup">Postcode</label>
+        <input id="postcode-signup" name="postcode" type="email" class="input-text" />
+    </div>
+
+    <button class="btn-primary js-submit-newsletter">
+        <span><span>Sign Up</span></span>
+    </button>
+</div>
+
+<div class="js-success-wrap">
+    <h6>Success!</h6><p class="intro">You have successfully signed up and will hear from us shortly.</p>    <span class="success-close js-close-signup" role="button">
+        Close    </span>
+</div>
+
+<div class="js-error-wrap">
+    <h6>OOPS, something went wrong</h6><p class="intro">We were unable to process your request please try again.</p></div>
+<div class="js-lightbox-loader"></div>
+        </form>
+    </div>
+<!--{BRONTO_CART_RECOVERY_22d676c613622a69e44b575890d6ece7}-->
+<!--/{BRONTO_CART_RECOVERY_22d676c613622a69e44b575890d6ece7}-->
+
+<script type="text/javascript">
+if (document.addEventListener) {
+  document.addEventListener('bronto:popup-submitted', function(e) {
+    new Ajax.Request('http://www.dealz.ie/btnewsletter/index/submit/', {
+      method: 'post',
+      parameters: { emailAddress: e.detail.email }
+    });
+  }, false);
+}
+</script>
+
+
+<script type="text/javascript" src="//p.bm23.com/bta.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+    var bta = new __bta('612565c875033c5b64d6f0909eb90eb8');
+    //]]>
+</script>
+
+
+<!--{WISHLISTS_51a06b4b67b2990ceccc1a9d4a104ae4}--><!--/{WISHLISTS_51a06b4b67b2990ceccc1a9d4a104ae4}-->    </div>
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"afa6637f54","applicationID":"15892137","transactionName":"YQEANRdYW0VQW0JeWFhLIwIRUFpYHltXQ1ZaCwVOBlhBU1ZXRE4YQA0HFg==","queueTime":0,"applicationTime":1376,"atts":"TUYDQ19CSEs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
